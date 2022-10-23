@@ -46,67 +46,82 @@
         <!-- End first block -->
         <!-- Second block -->
         <div class="user-nav">
-          <form action="" class="form">
-            <a href="#" class="form__link-title">
-              <h2 class="form__title">
-                <img
-                  src="./assets/img/instagramLogo.png"
-                  alt="Instagram"
-                  class="form__logo"
-                />
-              </h2>
-            </a>
+          <form class="form">
+            <h2 class="form__title">
+              <img
+                src="./assets/img/instagramLogo.png"
+                alt="Instagram"
+                class="form__logo"
+              />
+            </h2>
 
             <label class="form__label">
-              <span class="form__desc">
+              <span class="form__desc" id="js-span-text">
                 Номер телефону, ім'я користувача або ел. пошта
               </span>
-              <input type="text" />
+              <input type="text" class="form__name" id="js-input-text" />
             </label>
             <label class="form__label">
-              <span class="form__desc">Пароль</span>
-              <input type="password" />
-              <span class="form__show-pass-and-hide">Показати</span>
+              <span class="form__desc" id="js-span-pass">Пароль</span>
+              <span class="form__show-pass-and-hide" id="js-show-pass">
+                Показати
+              </span>
+              <input type="password" class="form__pass" id="js-input-pass" />
             </label>
-            <button class="form__btn">
+            <button class="form__btn" id="js-btn-login">
               <span>Увійти</span>
             </button>
             <div class="form__line">
-              <span class="form__and">Або</span>
+              <div class="form__or">
+                Або
+              </div>
             </div>
             <div class="form__login-facebook">
-              <div class="form__logo-f">
-                <a href="#" class="form__login-f-link">
-                  <div class="form__logo-f-box">
-                    <img
-                      src="./assets/img/facebook.png"
-                      alt="facebook"
-                      class="form__logo-f-img"
-                    />
-                  </div>
-                  <div class="form__login-f-text">Увійти через Facebook</div>
-                </a>
-              </div>
-              <div class="form__new-pass">
-                <a href="#" class="form__new-pass-link">
-                  Забули пароль?
-                </a>
-              </div>
+              <a
+                href="https://www.facebook.com/login.php"
+                class="form__login-f-link"
+              >
+                <div class="form__logo-f-box">
+                  <img
+                    src="./assets/img/facebook.png"
+                    alt="facebook"
+                    class="form__logo-f-img"
+                  />
+                </div>
+                <div class="form__login-f-text">Увійти через Facebook</div>
+              </a>
+            </div>
+            <div class="form__new-pass">
+              <a
+                href="https://www.instagram.com/accounts/password/reset/"
+                class="form__new-pass-link"
+              >
+                Забули пароль?
+              </a>
             </div>
           </form>
           <div class="register">
             <span class="register__desc">Не маєте облікового запису?</span>
-            <a class="register__link">
+            <a
+              href="https://www.instagram.com/accounts/emailsignup/"
+              class="register__link"
+            >
               Зареєструйтеся
             </a>
           </div>
           <div class="download">
             <div class="download__desc">Завантажити додаток.</div>
             <div class="download__buttons">
-              <a href="#">
+              <a
+                href="https://l.instagram.com/?u=https%3A%2F%2Fitunes.apple.com%2Fapp%2Finstagram%2Fid389801252%3Fpt%3D428156%26ct%3Digweb.loginPage.badge%26mt%3D8%26vt%3Dlo&e=AT3TsoKt2wtwOrs6w0J5xW8d4WCycbsfrjJfPas-EBMui4zDrOMojrp6We1ecIw7duTqugLQlw30QQ2HxSlce7RIYvfrDpaLE6p0tBnLVjqtR1K-cB-pX9DHW2R6aVC7uU6jzN7aNPZLxwy_RroorQ"
+                class="download__link"
+              >
                 <img src="./assets/img/app-store.png" alt="App Store" />
               </a>
-              <a href="#">
+              <a
+                href="https://l.instagram.com/?u=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.instagram.android%26referrer%3Dutm_source%253Dinstagramweb%2526utm_campaign%253DloginPage%2526ig_mid%253DDFE37195-7B2F-46B2-8295-2C1FE8BEBC10%2526utm_content%253Dlo%2526utm_medium%253Dbadge&e=AT3TsoKt2wtwOrs6w0J5xW8d4WCycbsfrjJfPas-EBMui4zDrOMojrp6We1ecIw7duTqugLQlw30QQ2HxSlce7RIYvfrDpaLE6p0tBnLVjqtR1K-cB-pX9DHW2R6aVC7uU6jzN7aNPZLxwy_RroorQ"
+                class="download__link"
+              >
                 <img src="./assets/img/google-play.png" alt="Google Play" />
               </a>
             </div>

@@ -1,5 +1,14 @@
 :root {
+  --c-btn-disabled: #b2dffc;
+  --c-input-text: #262626;
   --c-bg-page: #fafafa;
+  --c-facebook: #385185;
+  --c-border: #dbdbdb;
+  --c-silver: #8e8e8e;
+  --c-white: #ffffff;
+  --c-blue: #00376b;
+  --c-text: #383838;
+  --c-btn: #0095f6;
 }
 
 * {
@@ -11,21 +20,35 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif;
-  background-color: #fafafa;
+  background-color: var(--c-bg-page);
 }
 
 img {
   width: 100%;
 }
+input {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+button {
+  outline: none;
+  border: none;
+}
+a {
+  text-decoration: none;
+}
 
 .main {
-  position: relative;
+  justify-content: center;
+  margin-top: 125px;
+  align-items: center;
   display: flex;
   gap: 32px;
 }
 
-.phones__main {
-  position: absolute;
+.phones {
+  position: relative;
   max-width: 380px;
   min-width: 380px;
 }
@@ -42,4 +65,190 @@ img {
 
 .visible {
   opacity: 1;
+}
+
+.user-nav {
+  max-width: 350px;
+  min-width: 350px;
+}
+.form {
+  background-color: var(--c-white);
+  border: 1px solid var(--c-border);
+  padding: 20px 40px;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.form__title {
+  margin: 17px auto 24px auto;
+  padding: 10px 10px;
+  max-width: 195px;
+  min-width: 195px;
+  cursor: pointer;
+}
+.form__label {
+  position: relative;
+  margin-bottom: 8px;
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.form__name,
+.form__pass {
+  background-color: var(--c-bg-page);
+  border: 1px solid var(--c-border);
+  color: var(--c-input-text);
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+  font-size: 12px;
+  padding-top: 0;
+  height: 38px;
+}
+.form__pass {
+  padding-right: 80px;
+}
+.form__desc {
+  transition: transform ease-out 0.1s;
+  vertical-align: baseline;
+  text-overflow: ellipsis;
+  transform-origin: left;
+  color: var(--c-silver);
+  pointer-events: none;
+  white-space: nowrap;
+  padding-right: 10px;
+  line-height: 36px;
+  position: absolute;
+  overflow: hidden;
+  font-size: 12px;
+  left: 8px;
+  margin: 0;
+  right: 0;
+}
+
+.form__show-pass-and-hide {
+  background-color: transparent;
+  color: var(--c-text);
+  position: absolute;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  display: none;
+  right: 8px;
+  top: 10px;
+}
+
+.focus {
+  transform: scale(calc(10 / 12)) translateY(-10px);
+}
+.show {
+  display: block;
+}
+
+.form__btn {
+  background-color: var(--c-btn);
+  color: var(--c-white);
+  border-radius: 4px;
+  font-weight: 600;
+  margin-top: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0 20px;
+  height: 30px;
+  width: 100%;
+}
+
+.disabled {
+  background-color: var(--c-btn-disabled);
+  cursor: default;
+}
+
+.form__line {
+  border-top: 1px solid var(--c-border);
+  background-color: var(--c-white);
+  text-transform: uppercase;
+  color: var(--c-silver);
+  text-align: center;
+  position: relative;
+  font-weight: 600;
+  margin-top: 24px;
+  font-size: 12px;
+  z-index: 1;
+}
+.form__or {
+  background-color: var(--c-white);
+  transform: translateX(-50%);
+  position: absolute;
+  padding: 0 18px;
+  left: 50%;
+  top: -7px;
+}
+
+.form__login-facebook {
+  justify-content: center;
+  margin-top: 30px;
+  display: flex;
+}
+.form__login-f-link {
+  padding: 5px 10px;
+  column-gap: 8px;
+  display: flex;
+}
+.form__logo-f-box {
+  max-height: 16px;
+  min-height: 16px;
+  max-width: 16px;
+  min-width: 16px;
+}
+.form__login-f-text {
+  color: var(--c-facebook);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form__new-pass {
+  margin: 15px auto 0 auto;
+  text-align: center;
+}
+.form__new-pass-link {
+  color: var(--c-blue);
+  font-size: 12px;
+  padding: 5px;
+}
+
+.register {
+  border: 1px solid var(--c-border);
+  background-color: var(--c-white);
+  color: var(--c-text);
+  padding: 22px 28px;
+  border-radius: 2px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.register__link {
+  color: var(--c-btn);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.download {
+  color: var(--c-text);
+  text-align: center;
+  margin-top: 22px;
+  font-size: 14px;
+}
+.download__buttons {
+  justify-content: center;
+  margin-top: 20px;
+  column-gap: 8px;
+  display: flex;
+}
+.download__link {
+  max-width: 135px;
+  min-width: 135px;
+  cursor: pointer;
+  display: flex;
 }
