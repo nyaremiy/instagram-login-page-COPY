@@ -1,6 +1,6 @@
 console.log('App started...');
 
-const phones = document.querySelectorAll('.main__image');
+const phones = document.querySelectorAll('.phones__screen');
 
 function clearClassesForAllImagesWithPhones() {
   phones.forEach((item) => {
