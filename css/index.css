@@ -181,7 +181,6 @@ a {
 
 .form__line {
   border-top: 1px solid var(--c-border);
-  background-color: var(--c-white);
   text-transform: uppercase;
   color: var(--c-silver);
   text-align: center;
@@ -310,5 +309,8 @@ a {
   }
   .app {
     justify-content: space-between;
+  }
+  .form__or {
+    background-color: transparent;
   }
 }
