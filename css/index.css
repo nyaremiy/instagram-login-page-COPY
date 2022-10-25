@@ -286,3 +286,29 @@ a {
 .footer__link:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 875px) {
+  .phones {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .form,
+  .register {
+    background-color: transparent;
+    border: none;
+  }
+  .main {
+    margin-top: 0;
+  }
+  .footer {
+    padding-bottom: 40px;
+    margin-top: 50px;
+  }
+  .footer__list {
+    row-gap: 5px;
+  }
+  .app {
+    justify-content: space-between;
+  }
+}
